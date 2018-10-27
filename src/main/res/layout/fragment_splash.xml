@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#414141">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/splash_img"
+            android:layout_margin="@dimen/margin_x2"
+            android:src="@drawable/ic_up"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:textColor="@color/colorPrimaryText"
+            android:layout_margin="@dimen/margin_x2"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="PUSH UP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorPrimaryText"
+            android:visibility="invisible"
+            android:id="@+id/splash_playernameText"
+            android:layout_margin="@dimen/margin_x2"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="PlayerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/new_playerView"
+        android:layout_margin="@dimen/margin_x3"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:maxLength="20"
+            android:minWidth="250dp"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/new_playerEdit"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_margin="@dimen/margin_x2"
+            android:text="Steve Jobs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@drawable/shape_btn_white"
+            android:id="@+id/new_playerButton"
+            android:layout_margin="@dimen/margin_x2"
+            android:text="That's me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="visible"
+        android:id="@+id/splash_progressbar"
+        android:layout_margin="@dimen/margin_x3"
+        android:layout_gravity="bottom|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

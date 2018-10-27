@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#414141">
+    <LinearLayout
+        android:layout_margin="@dimen/margin_x2"
+        android:layout_gravity="top|center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/counter_head"
+            android:layout_margin="@dimen/margin_x2"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:text="Let's get on the Floor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/counter_subhead"
+            android:layout_margin="@dimen/margin_x2"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="No pain no Gain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/counter_count"
+            android:textSize="200sp"
+            android:text="26"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.hookedonplay.decoviewlib.DecoView
+            android:id="@+id/counter_decoView"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+        <TextView
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/counter_time"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="@dimen/margin_x3"
+            android:text="00:00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/counter_goal"
+            android:layout_gravity="top|end"
+            android:layout_margin="@dimen/margin_x3"
+            android:text="500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/counter_goalperc"
+            android:layout_gravity="top|start"
+            android:layout_margin="@dimen/margin_x3"
+            android:text="20%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/counter_cals"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/margin_x3"
+            android:text="00 cals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/margin_x3"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorPrimaryText"
+                android:text="Target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/colorPrimaryText"
+                    android:id="@+id/counter_targetView"
+                    android:textSize="40sp"
+                    android:text="26"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="end"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="end"
+                android:textColor="@color/colorPrimaryText"
+                android:gravity="end"
+                android:text="Gains"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/colorPrimaryText"
+                    android:id="@+id/counter_gains"
+                    android:textSize="40sp"
+                    android:text="26"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:background="@drawable/shape_btn_white"
+            android:id="@+id/counter_start"
+            android:padding="@dimen/padding_x2"
+            android:layout_margin="@dimen/margin_x2"
+            android:layout_gravity="center"
+            android:text="Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@drawable/shape_btn_white"
+            android:visibility="invisible"
+            android:id="@+id/counter_stop"
+            android:padding="@dimen/padding_x2"
+            android:layout_margin="@dimen/margin_x2"
+            android:layout_gravity="center"
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+
+
+</FrameLayout>
